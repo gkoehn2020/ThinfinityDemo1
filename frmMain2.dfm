@@ -11,7 +11,8 @@ object Form3: TForm3
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  Position = poScreenCenter
+  Position = poDesigned
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
@@ -22,8 +23,5 @@ object Form3: TForm3
     Align = alTop
     Caption = 'Hello! I am App 2!'
     TabOrder = 0
-    ExplicitLeft = 128
-    ExplicitTop = 80
-    ExplicitWidth = 185
   end
 end

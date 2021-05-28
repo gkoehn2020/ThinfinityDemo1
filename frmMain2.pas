@@ -9,6 +9,7 @@ uses
 type
   TForm3 = class(TForm)
     Panel1: TPanel;
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -21,5 +22,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm3.FormShow(Sender: TObject);
+begin
+  self.top := 300;
+  self.Left := 10;
+end;
 
 end.

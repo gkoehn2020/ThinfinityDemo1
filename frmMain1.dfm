@@ -11,6 +11,7 @@ object Form2: TForm2
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
@@ -21,7 +22,6 @@ object Form2: TForm2
     Align = alTop
     Caption = 'App #1'
     TabOrder = 0
-    ExplicitWidth = 634
   end
   object Button1: TButton
     Left = 8

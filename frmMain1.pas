@@ -11,7 +11,7 @@ type
     Panel1: TPanel;
     Button1: TButton;
     procedure Button1Click(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,16 +36,20 @@ var
   lApp2exe: string;
 begin
   lApp2exe := TPath.Combine(ExtractFilePath(Application.EXEName),'App2.exe');
-  VirtualUI.AllowExecute('.+\.exe');
 
-  if ShellExecute(0, 'open', PChar(lApp2exe), '', '', SW_SHOWNORMAL) <= 32 then
-    ShowMessage('Unable to start program: "'+lApp2exe+'".');
-
+  if FileExists(lApp2exe) then
+    begin
+      VirtualUI.AllowExecute('.+\.exe');
+      if ShellExecute(0, 'open', PChar(lApp2exe), '', '', SW_SHOWNORMAL) <= 32 then
+        ShowMessage('Unable to start program: "'+lApp2exe+'".');
+    end
+  else
+    ShowMessage('File name [' + lApp2exe + '] does not exists. Could not launch.');
 end;
 
-procedure TForm2.FormCreate(Sender: TObject);
+procedure TForm2.FormShow(Sender: TObject);
 begin
-  self.top := 50;
+  self.top := 10;
   self.Left := 10;
 end;
 
