@@ -7,5 +7,5 @@ It only is exhibiting the issue when running it from the delphi ide under port 6
 When running it under the actual server on port 6580, it appears to work fine.
 
 
-See the example here...  
+See the example here (Click image to open animated gif in separate tab)...  
 <img src="https://github.com/gkoehn2020/ThinfinityDemo1/blob/main/ThinfinityShellExecuteToAnotherThinAppNotRendering.gif?raw=true" target="_blank" alt="ThinfinityShellExecuteToAnotherThinAppNotRendering.gif">
