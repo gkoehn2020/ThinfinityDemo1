@@ -20,7 +20,9 @@ object Form2: TForm2
     Width = 247
     Height = 89
     Align = alTop
-    Caption = 'App #1'
+    Caption = 'This is the Main App'
+    Color = clAqua
+    ParentBackground = False
     TabOrder = 0
   end
   object Button1: TButton
@@ -28,7 +30,7 @@ object Form2: TForm2
     Top = 95
     Width = 225
     Height = 66
-    Caption = 'Run App #2'
+    Caption = 'Shellexecute and run App #2'
     TabOrder = 1
     OnClick = Button1Click
   end
