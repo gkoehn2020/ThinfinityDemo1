@@ -8,4 +8,4 @@ When running it under the actual server on port 6580, it appears to work fine.
 
 
 See the example here...  
-<img src="https://github.com/gkoehn2020/ThinfinityDemo1/blob/main/ThinfinityShellExecuteToAnotherThinAppNotRendering.gif?raw=true" alt="ThinfinityShellExecuteToAnotherThinAppNotRendering.gif">
+<img src="https://github.com/gkoehn2020/ThinfinityDemo1/blob/main/ThinfinityShellExecuteToAnotherThinAppNotRendering.gif?raw=true" target="_blank" alt="ThinfinityShellExecuteToAnotherThinAppNotRendering.gif">
